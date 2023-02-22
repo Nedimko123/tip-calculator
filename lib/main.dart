@@ -20,6 +20,11 @@ class MyApp extends StatelessWidget {
           title: 'Tip Calculator',
           debugShowCheckedModeBanner: false,
           theme: ThemeData(useMaterial3: true, colorSchemeSeed: Colors.red),
+          darkTheme: ThemeData(
+              useMaterial3: true,
+              colorSchemeSeed: Colors.red,
+              brightness: Brightness.dark),
+          themeMode: ThemeMode.light,
           home: const Home(),
         );
       },

@@ -1,25 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:tip_calculator/features/common/error/sliver_error.dart';
+import 'package:tip_calculator/features/common/loader/sliver_loader.dart';
 import 'package:tip_calculator/features/common/presentation/layout_design/sliver_scaffold.dart';
-import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:tip_calculator/features/homepage/presentation/widgets/bill_form.dart';
-import 'package:tip_calculator/features/homepage/presentation/widgets/tip.dart';
-import 'package:tip_calculator/features/homepage/presentation/widgets/tip_slider.dart';
+import 'package:tip_calculator/features/history/domain/providers.dart';
+import 'package:tip_calculator/features/history/presentation/widgets/transactions_list.dart';
 
 class TipHistory extends ConsumerWidget {
   const TipHistory({super.key});
 
   @override
   Widget build(BuildContext context, ref) {
+    final transactions = ref.watch(transactionHistoryProvider);
     return SliverScaffold(slivers: [
       const SliverAppBar(
         title: Text('Tip history'),
       ),
-      SliverToBoxAdapter(
-        child: Column(
-          children: [],
-        ),
-      )
+      transactions.when(
+          data: (transactions) =>
+              TransactionList(transactions: transactions.reversed.toList()),
+          error: (e, _) => SliverError(e: e.toString()),
+          loading: () => const SliverLoader()),
     ]);
   }
 }

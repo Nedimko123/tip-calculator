@@ -25,7 +25,7 @@ class SplitBill extends ConsumerWidget {
           height: 2.h,
         ),
         Text(
-          splitBill.toStringAsFixed(1),
+          splitBill.toStringAsFixed(2),
           style: TextStyle(fontSize: 26.sp),
         )
       ],

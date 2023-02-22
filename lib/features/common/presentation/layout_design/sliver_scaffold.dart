@@ -11,6 +11,7 @@ class SliverScaffold extends StatelessWidget {
   final bool reverse;
   final Color? safeAreaColor;
   final Gradient? safeAreaGradient;
+  final Widget? floatingActionButton;
   const SliverScaffold({
     Key? key,
     required this.slivers,
@@ -19,11 +20,13 @@ class SliverScaffold extends StatelessWidget {
     this.reverse = false,
     this.safeAreaColor,
     this.safeAreaGradient,
+    this.floatingActionButton,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: floatingActionButton,
       drawer: drawer,
       backgroundColor: background,
       body: Container(
