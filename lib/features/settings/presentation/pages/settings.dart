@@ -12,6 +12,7 @@ class Settings extends ConsumerWidget {
   Widget build(BuildContext context, ref) {
     return SliverScaffold(slivers: [
       const SliverAppBar(
+        centerTitle: true,
         title: Text('Settings'),
       ),
       SliverFillRemaining(
@@ -19,9 +20,9 @@ class Settings extends ConsumerWidget {
           padding: EdgeInsets.all(15.sp),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              const ThemeModeSwitch(),
-              const DeleteHistory(),
+            children: const [
+              ThemeModeSwitch(),
+              DeleteHistory(),
             ],
           ),
         ),

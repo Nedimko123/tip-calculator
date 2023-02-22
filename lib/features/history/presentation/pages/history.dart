@@ -14,6 +14,7 @@ class TipHistory extends ConsumerWidget {
     final transactions = ref.watch(transactionHistoryProvider);
     return SliverScaffold(slivers: [
       const SliverAppBar(
+        centerTitle: true,
         title: Text('Tip history'),
       ),
       transactions.when(
