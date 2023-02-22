@@ -33,7 +33,7 @@ class BillForm extends ConsumerWidget {
             decoration: const InputDecoration(
               border: OutlineInputBorder(),
               labelText: 'Bill amount',
-              hintText: 'Bill amount',
+              hintText: 'Enter bill amount',
             ),
           ),
         ),

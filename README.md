@@ -1,4 +1,4 @@
-# Tip calculator
+# Tip Calculator
 
 Are you tired of trying to split the bill with your friends or struggling to calculate the right tip amount for your waiter? Look no further than our Tip Calculator app!
 
