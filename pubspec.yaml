@@ -44,6 +44,8 @@ dependencies:
   json_annotation: ^4.7.0
   intl: ^0.18.0
   fluttertoast: ^8.2.1
+  icons_launcher: ^2.1.0
+  flutter_native_splash: ^2.2.18
 
 dev_dependencies:
   flutter_test:
@@ -59,8 +61,29 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
 
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/logos/tip.png
+  branding: assets/logos/tip.png
+  color_dark: "#121212"
+  image_dark: assets/logos/tip.png
+  branding_dark: assets/logos/tip.png
+
+  android_12:
+    image: assets/logos/tip.png
+    icon_background_color: "#ffffff"
+    image_dark: assets/logos/tip.png
+    icon_background_color_dark: "#121212"
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
+icons_launcher:
+  image_path: "assets/logos/tip.png"
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: true
 
 # The following section is specific to Flutter packages.
 flutter:

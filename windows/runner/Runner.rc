@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "tip_calculator" "\0"
+            VALUE "FileDescription", "Tip Calculator" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "tip_calculator" "\0"
+            VALUE "InternalName", "Tip Calculator" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
             VALUE "OriginalFilename", "tip_calculator.exe" "\0"
-            VALUE "ProductName", "tip_calculator" "\0"
+            VALUE "ProductName", "Tip Calculator" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
