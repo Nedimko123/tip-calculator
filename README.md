@@ -1,16 +1,9 @@
-# tip_calculator
+# Tip calculator
 
-A new Flutter project.
+Are you tired of trying to split the bill with your friends or struggling to calculate the right tip amount for your waiter? Look no further than our Tip Calculator app!
 
-## Getting Started
+Our app allows you to easily calculate the tip amount and split the bill among multiple people in just a few taps. Simply enter the total bill amount, select the tip percentage using our handy slider tool, and input the number of people in your party. Our app will instantly calculate the total tip amount and the amount each person needs to pay.
 
-This project is a starting point for a Flutter application.
+Not sure what the standard tip percentage is? No problem! Our app includes a helpful tip guide that explains the standard tipping practices in your area.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+With our sleek and user-friendly interface, you'll be able to calculate tips and split bills like a pro in no time. Download our Tip Calculator app today and simplify your dining experience!
