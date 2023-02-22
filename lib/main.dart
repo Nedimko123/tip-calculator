@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
+import 'package:tip_calculator/features/introduction_screen/presentation/pages/intro_main.dart';
 import 'package:tip_calculator/features/navbar/presentation/pages/home.dart';
 import 'package:tip_calculator/features/settings/domain/providers.dart';
 
@@ -29,7 +30,7 @@ class MyApp extends ConsumerWidget {
           themeMode: themeMode.maybeWhen(
               data: (themeMode) => themeMode ? ThemeMode.dark : ThemeMode.light,
               orElse: () => ThemeMode.dark),
-          home: const Home(),
+          home: const IntroductionScreenMain(),
         );
       },
     );
