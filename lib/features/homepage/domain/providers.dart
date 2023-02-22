@@ -5,3 +5,4 @@ final tipPercentageCalculatorProvider = StateProvider<double>((ref) => 0.10);
 final billAmountControllerProvider =
     Provider<TextEditingController>((ref) => TextEditingController());
 final billAmountProvider = StateProvider<double?>((ref) => 0);
+final peopleAmountProvider = StateProvider<int>((ref) => 1);
