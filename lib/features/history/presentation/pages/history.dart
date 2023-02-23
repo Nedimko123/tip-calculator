@@ -4,6 +4,7 @@ import 'package:tip_calculator/features/common/error/sliver_error.dart';
 import 'package:tip_calculator/features/common/loader/sliver_loader.dart';
 import 'package:tip_calculator/features/common/presentation/layout_design/sliver_scaffold.dart';
 import 'package:tip_calculator/features/history/domain/providers.dart';
+import 'package:tip_calculator/features/history/presentation/widgets/empty_history.dart';
 import 'package:tip_calculator/features/history/presentation/widgets/transactions_list.dart';
 
 class TipHistory extends ConsumerWidget {
@@ -18,8 +19,9 @@ class TipHistory extends ConsumerWidget {
         title: Text('Tip history'),
       ),
       transactions.when(
-          data: (transactions) =>
-              TransactionList(transactions: transactions.reversed.toList()),
+          data: (transactions) => transactions.isEmpty
+              ? const EmptyTransactionHistory()
+              : TransactionList(transactions: transactions.reversed.toList()),
           error: (e, _) => SliverError(e: e.toString()),
           loading: () => const SliverLoader()),
     ]);
